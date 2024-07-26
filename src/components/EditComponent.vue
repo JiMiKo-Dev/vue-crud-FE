@@ -66,7 +66,7 @@ export default {
   },
   methods: {
     getCustomerInfo() {
-      const apiURL = `http://localhost:3300/api/customers/${this.$route.params.id}`;
+      const apiURL = `http://localhost:3301/api/customers/${this.$route.params.id}`;
 
       axios
         .get(apiURL)
@@ -79,7 +79,7 @@ export default {
     },
     submitForm() {
       console.log(+this.$route.params.id);
-      const apiURL = `http://localhost:3300/api/update-customers/${+this.$route
+      const apiURL = `http://localhost:3301/api/update-customers/${+this.$route
         .params.id}`;
         console.log(apiURL)
       axios

@@ -58,7 +58,7 @@ export default {
   },
   methods: {
     deleteCustomer(id) {
-      const apiURL = `http://localhost:3300/api/delete-customers/${id}`;
+      const apiURL = `http://localhost:3301/api/delete-users/${id}`;
 
       if (window.confirm(`Do You want to delete ${id}`)) {
         axios
@@ -72,7 +72,7 @@ export default {
 
     getCustomers() {
       axios
-        .get("http://localhost:3300/api/customers")
+        .get("http://localhost:3301/api/users")
         .then((res) => {
           this.listcustomer = res.data;
         })

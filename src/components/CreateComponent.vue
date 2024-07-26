@@ -59,7 +59,7 @@ export default {
   },
   methods: {
     submitForm() {
-      let apiURL = "http://localhost:3300/api/create-customers";
+      let apiURL = "http://localhost:3301/api/create-users";
 
       axios
         .post(apiURL, this.customers)
